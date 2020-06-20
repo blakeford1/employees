@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-
+// Handling the connections
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   password: "password",
   database: "employee_db",
 });
-
+?
 connection.connect(function (err) {
   if (err) throw err;
   start();
